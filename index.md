@@ -1,6 +1,6 @@
 ---
 layout: default
-title: wellcome !
+title: Wellcome !
 ---
 
 # Wellcome ! 👋
