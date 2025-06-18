@@ -1,0 +1,25 @@
+# .github/workflows/update.yml
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # ежедневно в полночь
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update file
+        run: |
+          echo "Last updated: $(date)" > last_update.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Auto-update timestamp"
+          git push
