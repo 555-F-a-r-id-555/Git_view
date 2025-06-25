@@ -1,4 +1,4 @@
-<h1 align="center">Wellcome ! 👋</h1>
+<h1 align="center">Welcome ! 👋</h1>
 
 
 📄 My_Web_Page:  
